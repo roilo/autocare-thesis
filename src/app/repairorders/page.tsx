@@ -427,9 +427,9 @@ export default function Component() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
                               <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                              <DropdownMenuItem>
-                                <a href="repairorders/details">Edit</a>
-                                </DropdownMenuItem>
+                              <a href="repairorders/details">
+                                <DropdownMenuItem>Edit</DropdownMenuItem>
+                                </a>
                               <DropdownMenuItem>Delete</DropdownMenuItem>
                             </DropdownMenuContent>
                           </DropdownMenu>
