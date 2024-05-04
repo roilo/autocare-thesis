@@ -20,6 +20,7 @@ import { Badge } from "@/components/ui/badge"
 export default function Component() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-muted/40">
+      {/* side dashboard */}
       <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
         <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
           <TooltipProvider>
@@ -150,6 +151,7 @@ export default function Component() {
               </nav>
             </SheetContent>
           </Sheet>
+          {/* top dashboard part 1 page links */}
           <Breadcrumb className="hidden md:flex">
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -169,6 +171,7 @@ export default function Component() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
+          {/* top dashboard part 2 search bar */}
           <div className="relative ml-auto flex-1 md:grow-0">
             <SearchIcon className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
@@ -177,6 +180,7 @@ export default function Component() {
               type="search"
             />
           </div>
+          {/* top dashboard part 3 my account dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button className="overflow-hidden rounded-full" size="icon" variant="outline">
