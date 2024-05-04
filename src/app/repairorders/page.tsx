@@ -26,7 +26,7 @@ export default function Component() {
           <TooltipProvider>
             <Link
               className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
-              href="#"
+              href="repairorders"
             >
               <Package2Icon className="h-4 w-4 transition-all group-hover:scale-110" />
               <span className="sr-only">Acme Inc</span>
@@ -46,7 +46,7 @@ export default function Component() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   href="#"
                 >
                   <ShoppingCartIcon className="h-5 w-5" />
@@ -83,7 +83,7 @@ export default function Component() {
               <TooltipTrigger asChild>
                 <Link
                   className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
-                  href="#"
+                  href="analytics"
                 >
                   <LineChartIcon className="h-5 w-5" />
                   <span className="sr-only">Analytics</span>
@@ -427,7 +427,9 @@ export default function Component() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
                               <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                              <DropdownMenuItem>Edit</DropdownMenuItem>
+                              <DropdownMenuItem>
+                                <a href="repairorders/details">Edit</a>
+                                </DropdownMenuItem>
                               <DropdownMenuItem>Delete</DropdownMenuItem>
                             </DropdownMenuContent>
                           </DropdownMenu>
